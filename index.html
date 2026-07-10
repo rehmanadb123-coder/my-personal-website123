@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>AbdulRehman - My personal website</title>
+	
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/mobile.css">
+	<script src="js/mobile.js"></script>
+	
+	<script>
+	window.onload = function () {
+		alert("Welcome to Abdul Rehman Khan's Personal Website!");
+	};
+	
+	function greetVisitor() {
+		var name = document.getElementById("visitorName").value;
+		
+		if (name == "") {
+			document.getElementById("result").innerHTML = "Please enter your name.";
+		} else {
+			document.getElementById("result").innerHTML = 
+				"Hello " + name + "! Thank you for visiting my website.";
+		}
+	}
+	</script>
+</head>
+
+<body>
+
+<div id="header">
+	<h1>
+		<a href="header">
+			Abdul Rehman Khan
+		    <span>My Personal Website</span>
+		</a>
+	</h1>
+		
+	<ul id="navigation">
+		<li class="current"><a href="index.html">Home</a></li>
+		<li><a href="about.html">About</a></li>
+		<li><a href="classes.html">Skill</a></li>
+		<li><a href="blog.html">Blog</a></li>
+	</ul>
+</div>
+	
+<div id="body">
+	
+	<div id="tagline">
+		<h1>Welcome!</h1>
+			
+		<p>
+			This website introduces me, my interests, and my learning journey.
+		</p>
+	</div>
+	
+	<img src="images/rehman.jpg" alt="Main Image" class="figure">
+		
+	<div style="text-align:center;margin:30px;">
+		
+		<h2>Visitor Greeting</h2>
+			
+		<input type="text" id="visitorName" placeholder="Enter your name">
+				
+		<button onclick="greetVisitor()">Say Hello</button>
+			
+		<p id="result"></p>
+			
+	</div>
+		
+	<div style="text-align:center;margin:20px;font-size:18px;">
+		<h3> Original Website Template</h3>
+		<a href="https://freewebsitetemplates.com/preview/rehabilitation-yoga/index.html" target="_blank">
+			click here to view the Original Website Template
+		</a>
+	</div>
+		
+</div>
+	
+<div id="footer">
+
+	<div>
+		
+		<span>
+			Student Name: Abdul Rehman Khan |
+			Student ID: 58-25229001
+		</span>
+			
+		<p>
+			&COPY; 2026 Abdul Rehman Khan.All Rights Reserved.
+		</p>
+		
+	</div>
+		
+</div>
+
+</body>
+</html>
